@@ -1,0 +1,25 @@
+key: esnaccounts
+title: ESN Accounts
+description: CAS user authentication for ESN Accounts with options to restrict for countries
+author: IT Team ESN Germany
+logo: https://esn.org/sites/default/files/ESN_full-logo-Satellite.png
+color: green darken-2
+website: https://apereo.github.io/cas/
+useForm: false
+isAvailable: true
+props:
+  esnCountry: 
+    type: String
+    title: ESN Country
+    hint: ESN Country how it's saved on ESN Accounts (ESNGermany)
+    order: 1
+  ssoBaseURL:
+    type: String
+    title: ESN Accounts Server URL
+    hint: ESN Accounts Server URL with CAS ending (https://accounts.esn.org/cas)
+    order: 2
+  serverBaseURL:
+    type: String
+    title: ESN Wiki Server URL
+    hint: ESN Wiki Server URL (this instance)
+    order: 3
