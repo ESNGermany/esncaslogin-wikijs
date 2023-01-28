@@ -19,7 +19,8 @@ module.exports = {
         passReqToCallback: true
       }, async (req, profile, cb) => {
         try {
-          if (profile.attributes.country != conf.esnCountry) {
+          if (profile.attributes.sc.substring(0,2) != conf.esnCountry) {
+						console.log("ESN country doesn't match")
             throw new WIKI.Error.AuthLoginFailed()
           }
           const user = await WIKI.models.users.processProfile({

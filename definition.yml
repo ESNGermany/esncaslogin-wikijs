@@ -10,8 +10,8 @@ isAvailable: true
 props:
   esnCountry: 
     type: String
-    title: ESN Country
-    hint: ESN Country how it's saved on ESN Accounts (ESNGermany)
+    title: ESN Country ID
+    hint: Two digits ESN Country ID how it's in front of the sections ID (DE-XXXX-XX)
     order: 1
   ssoBaseURL:
     type: String
